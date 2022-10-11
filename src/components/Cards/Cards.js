@@ -8,10 +8,10 @@ const Cards = ({ quizTopics }) => {
     console.log(quizTopics);
     return (
         <div className='my-5  container'>
-            <Row xs={1} md={2} className="g-4">
+            <Row xs={1} md={1} lg={2} className="g-4">
                 {Array.from(quizTopics).map((quizTopic, id) => (
                     <Col>
-                        <Card className='mx-auto bg-dark text-white' style={{ width: '25rem' }}>
+                        <Card className='mx-auto bg-dark text-white' style={{ width: '23rem' }}>
                             <Card.Img variant="top" src={quizTopic.logo} />
                             <Card.Body className='border-top'>
                                 <Card.Title>{quizTopic.name}</Card.Title>
