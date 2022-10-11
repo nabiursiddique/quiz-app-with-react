@@ -16,7 +16,7 @@ const Cards = ({ quizTopics }) => {
                             <Card.Body className='border-top'>
                                 <Card.Title>{quizTopic.name}</Card.Title>
                                 <Card.Text className='d-flex justify-content-between pt-3'>
-                                    <Link to={`quizes/${quizTopic.id}`}>
+                                    <Link to={`../quizes/${quizTopic.id}`}>
                                         <Button variant="light" className='px-5'>Start</Button>
                                     </Link>
                                     Total Quiz: {quizTopic.total}

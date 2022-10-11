@@ -7,13 +7,14 @@ const Quizes = () => {
     const quizD = quizData.data.questions;
     const topics = (quizData.data);
     // console.log(topic)
-    // console.log(quizD);
+    console.log(quizD);
     return (
         <div>
             {
-                quizD.map(quiz => <Quiz
+                quizD.map((quiz, index) => <Quiz
                     key={quiz.id}
                     quiz={quiz}
+                    index={index}
                 ></Quiz>)
             }
         </div>
