@@ -8,7 +8,7 @@ const Home = () => {
     console.log(quizTopics);
     return (
         <div>
-            <div className='home-header'>
+            <div>
                 <h1 className='mt-5 mb-5'>Choose Your Quiz Topic</h1>
                 <Cards key={quizTopics.id} quizTopics={quizTopics}></Cards>
             </div>

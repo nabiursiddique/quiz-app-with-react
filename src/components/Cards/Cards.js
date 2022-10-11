@@ -12,7 +12,7 @@ const Cards = ({ quizTopics }) => {
                             <Card.Img variant="top" src={quizTopic.logo} />
                             <Card.Body className='border-top'>
                                 <Card.Title>{quizTopic.name}</Card.Title>
-                                <Card.Text className='d-flex justify-content-between'>
+                                <Card.Text className='d-flex justify-content-between pt-3'>
                                     <Button variant="light" className='px-5'>Start</Button>{' '}
                                     Total Quiz:{quizTopic.total}
                                 </Card.Text>
