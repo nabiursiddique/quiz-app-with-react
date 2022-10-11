@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Cards.css'
 
 const Cards = ({ quizTopics }) => {
@@ -13,8 +14,10 @@ const Cards = ({ quizTopics }) => {
                             <Card.Body className='border-top'>
                                 <Card.Title>{quizTopic.name}</Card.Title>
                                 <Card.Text className='d-flex justify-content-between pt-3'>
-                                    <Button variant="light" className='px-5'>Start</Button>{' '}
-                                    Total Quiz:{quizTopic.total}
+                                    <Link to='quizes'>
+                                        <Button variant="light" className='px-5'>Start</Button>
+                                    </Link>
+                                    Total Quiz: {quizTopic.total}
                                 </Card.Text>
                             </Card.Body>
                         </Card>

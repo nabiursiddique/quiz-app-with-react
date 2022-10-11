@@ -8,7 +8,7 @@ const Topics = () => {
 
     return (
         <div>
-            <h1 className='mt-5 mb-5'>These Quiz Topics Are Available</h1>
+            <h1 className='mt-5 mb-5 text-center'>These Quiz Topics Are Available</h1>
             <hr />
             <Cards key={quizTopics.id} quizTopics={quizTopics}></Cards>
         </div>
