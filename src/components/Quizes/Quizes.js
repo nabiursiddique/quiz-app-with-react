@@ -5,7 +5,9 @@ import Quiz from '../Quiz/Quiz';
 const Quizes = () => {
     const quizData = useLoaderData();
     const quizD = quizData.data.questions;
-    console.log(quizD);
+    const topics = (quizData.data);
+    // console.log(topic)
+    // console.log(quizD);
     return (
         <div>
             {

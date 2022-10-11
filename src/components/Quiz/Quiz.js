@@ -1,4 +1,5 @@
 import React from 'react';
+import './Quiz.css'
 
 const removeTags = (str) => {
     if ((str === null) || (str === ''))
@@ -9,10 +10,11 @@ const removeTags = (str) => {
 }
 
 const Quiz = ({ quiz }) => {
+    console.log(quiz)
     const { question, options, correctAnswer } = quiz;
     return (
-        <div>
-            <p>{question.replace(/(<([^>]+)>)/ig, '')}</p>
+        <div className='container border border-info mb-3 question-container'>
+            <p className=' h5'>{question.replace(/(<([^>]+)>)/ig, '')}</p>
             <p>{options.map(option => <p>{option}</p>)}</p>
         </div>
     );
