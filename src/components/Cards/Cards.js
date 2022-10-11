@@ -3,6 +3,7 @@ import { Button, Card, Col, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Cards.css'
 
+
 const Cards = ({ quizTopics }) => {
     return (
         <div className='my-5  container'>

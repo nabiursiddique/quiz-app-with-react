@@ -8,7 +8,7 @@ const ErrorPage = () => {
     return (
         <div className='main-div'>
             <Header></Header>
-            <div className="container text-light bg-dark p-5 mt-5">
+            <div className="container text-light bg-dark p-5 mt-5 text-center">
                 <h1 className='pt-5 fw-bolder text-muted display-1'>404</h1>
                 <h1 className='mt-3 '>YOUR LINK ADDRESS IS NOT CORRECT</h1>
 

@@ -9,6 +9,7 @@ const Home = () => {
         <div>
             <div>
                 <h1 className='mt-5 mb-5 text-center'>Choose Your Quiz Topic</h1>
+                <hr />
                 <Cards key={quizTopics.id} quizTopics={quizTopics}></Cards>
             </div>
         </div>

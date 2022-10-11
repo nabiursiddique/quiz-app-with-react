@@ -1,11 +1,19 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Quiz from '../Quiz/Quiz';
 
 const Quizes = () => {
-    const loaderData = useLoaderData();
+    const quizData = useLoaderData();
+    const quizD = quizData.data.questions;
+    console.log(quizD);
     return (
         <div>
-            <h2>this is quizes page</h2>
+            {
+                quizD.map(quiz => <Quiz
+                    key={quiz.id}
+                    quiz={quiz}
+                ></Quiz>)
+            }
         </div>
     );
 };

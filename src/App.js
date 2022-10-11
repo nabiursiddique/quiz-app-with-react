@@ -34,9 +34,11 @@ function App() {
         },
         {
           path: 'quizes',
-          loader: (id) => fetch(` https://openapi.programming-hero.com/api/quiz/${id}`),
+          loader: async () => {
+            return fetch('https://openapi.programming-hero.com/api/quiz/1')
+          },
           element: <Quizes></Quizes>
-        }
+        },
       ],
       errorElement: <ErrorPage></ErrorPage>
     }
