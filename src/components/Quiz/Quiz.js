@@ -1,14 +1,6 @@
 import React from 'react';
 import './Quiz.css'
 
-const removeTags = (str) => {
-    if ((str === null) || (str === ''))
-        return false;
-    else
-        str = str.toString();
-    return str.replace(/(<([^>]+)>)/ig, '');
-}
-
 const Quiz = ({ quiz, index }) => {
     // console.log(quiz)
     const { question, options, correctAnswer } = quiz;
