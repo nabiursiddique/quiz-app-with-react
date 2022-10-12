@@ -7,7 +7,7 @@ const Statistics = () => {
     const totalArr = quizData.data;
     console.log(totalArr)
     return (
-        <div className='bg-dark container-fluid'>
+        <div className='bg-dark'>
             <h1 className='text-center text-info pt-5 fw-bold border-top'> Statistics Of Total Marks</h1>
             <hr />
             <div className='d-flex justify-content-center mt-5'>
