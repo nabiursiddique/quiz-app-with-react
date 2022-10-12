@@ -7,7 +7,8 @@ const Quizes = () => {
     const quizD = quizData.data.questions;
     // console.log(quizD);
     return (
-        <div>
+        <div className='bg-black pt-5'>
+            <h3 className='text-info text-center pb-5'>QUIZ PAGE</h3>
             {
                 quizD.map((quiz, index) => <Quiz
                     key={quiz.id}
