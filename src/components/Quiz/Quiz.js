@@ -6,7 +6,7 @@ const Quiz = ({ quiz, index }) => {
     const { question, options, correctAnswer } = quiz;
     console.log(correctAnswer)
     return (
-        <div className='container bg-dark text-white p-5 rounded mb-3 question-container'>
+        <div className='container bg-dark text-white p-5 rounded pb-5 question-container border-bottom '>
             <p className=' h5'>{index + 1}. {question.replace(/(<([^>]+)>)/ig, '')}</p>
 
 

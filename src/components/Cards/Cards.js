@@ -7,7 +7,7 @@ import './Cards.css'
 const Cards = ({ quizTopics }) => {
     console.log(quizTopics);
     return (
-        <div className='my-5  container'>
+        <div className='pb-5  container'>
             <Row xs={1} md={1} lg={2} className="g-4">
                 {Array.from(quizTopics).map((quizTopic, id) => (
                     <Col>

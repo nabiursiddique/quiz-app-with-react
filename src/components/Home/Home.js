@@ -6,9 +6,9 @@ const Home = () => {
     const loaderData = useLoaderData();
     const quizTopics = loaderData.data;
     return (
-        <div>
+        <div className='bg-black'>
             <div>
-                <h1 className='mt-5 mb-5 text-center'>Choose Your Quiz Topic</h1>
+                <h1 className=' pt-5 text-center text-info'>Choose Your Quiz Topic</h1>
                 <hr />
                 <Cards key={quizTopics.id} quizTopics={quizTopics}></Cards>
             </div>
