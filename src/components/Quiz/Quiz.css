@@ -1,2 +1,3 @@
-.question-container {
+.hover-work:hover {
+  cursor: pointer;
 }
