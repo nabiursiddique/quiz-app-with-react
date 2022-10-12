@@ -7,20 +7,23 @@ const Statistics = () => {
     const totalArr = quizData.data;
     console.log(totalArr)
     return (
-        <div >
-            <h2 className='text-center mt-5'>This Is Statistics Page</h2>
+        <div className='bg-dark container-fluid'>
+            <h1 className='text-center text-info pt-5 fw-bold border-top'> Statistics Of Total Marks</h1>
+            <hr />
             <div className='d-flex justify-content-center mt-5'>
-                <div>
-                    <LineChart width={500} height={400} data={totalArr}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        <Line type="monotone" dataKey="total" stroke="#82ca9d" />
-                    </LineChart>
+                <div className='pb-5'>
+                    <ResponsiveContainer width={500} height={400}>
+                        <LineChart data={totalArr}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                        </LineChart>
+                    </ResponsiveContainer>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
