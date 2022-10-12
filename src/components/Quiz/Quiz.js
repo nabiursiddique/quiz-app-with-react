@@ -10,7 +10,7 @@ const Quiz = ({ quiz, index }) => {
             <p className=' h5'>{index + 1}. {question.replace(/(<([^>]+)>)/ig, '')}</p>
 
 
-            <p>{options.map(option => <p> <input type="radio"></input> {option}</p>)}</p>
+            <p>{options.map((option, ind) => <p> <input type="radio" name={`value${ind}`}></input> {option}</p>)}</p>
         </div>
     );
 };
